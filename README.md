@@ -1,4 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 饭伴 FanBan
+
+一个基于 Next.js 16 的 H5 项目，帮助用户快速生成一周午餐菜单。
+
+## 功能特性
+
+- 🍽️ 一键生成周一至周五的午餐菜单
+- 🎯 支持个性化偏好设置（口味、饮食目标、烹饪时长、厨具、忌口、菜式）
+- 🤖 使用阿里云 AI 大模型智能生成菜谱
+- 📝 菜谱详情查看（食材、步骤、营养信息）
+- 🛒 自动生成购物清单
+- 📚 历史菜单回顾
+
+## 环境配置
+
+### 1. 安装依赖
+
+```bash
+npm install
+# 或
+yarn install
+# 或
+pnpm install
+```
+
+### 2. 配置阿里云 API Key
+
+1. 访问 [阿里云 DashScope 控制台](https://dashscope.console.aliyun.com/)
+2. 创建 API Key
+3. 在项目根目录创建 `.env.local` 文件：
+
+```bash
+DASHSCOPE_API_KEY=your_api_key_here
+```
+
+**注意**：`.env.local` 文件已添加到 `.gitignore`，不会被提交到代码仓库。
 
 ## Getting Started
 
